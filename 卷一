@@ -1,0 +1,30 @@
+1 printf 函数默认输出左对齐 在%和d之间加 -数字控制输出宽度左对齐 不加-着为右对齐
+
+2 
+  1.常量指针通常有两种表示方法:
+
+  method 1: const double * ptr;
+
+  method 2: double const *ptr;
+
+  2.指针常量通常表示为：
+
+  double * const ptr;
+
+  很多人经常遇见上述三种表示方法处于懵的状态，现提供记忆方法如下。
+
+  首先，不管三七二十一先把double * ptr写好，因为上述三种表示方法，double * ptr这三个相对顺序是不变的，并标记位置(1)double(2) * (3)ptr；
+
+  然后，需要特殊记忆一下在(1)(2)位置添加const,为相同表示，在(3)处添加为另一种表示；
+
+  下面读法为本文重点。
+
+  method 1: const double * ptr;//const读作常量，*读作指针，按照顺序读作常量(的)指针
+
+  method 2: double const *ptr;//const读作常量，*读作指针，按照顺序读作常量(是)指针
+
+  double * const ptr;//const读作常量，*读作指针，按照顺序读作指针常量，
+
+  const靠近*还是double,那么谁就是不变的。
+  3
+  
